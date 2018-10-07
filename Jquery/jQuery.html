@@ -1,0 +1,65 @@
+<html>
+<head> <title> jquery </title>
+<style type="text/css">
+  #srql{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color: green;
+    margin: 10px;
+  }
+
+</style>
+  <script src='jquery.slim.min.js'>
+ </script></head>
+<body>
+  <div id="srql"></div>
+  <p> this is javascript </P>
+
+  <script type="text/javascript">
+  $("#srql").click(function(){
+
+    //alert("this is jquery");
+
+    //1  change html tag value
+    //$("p").html("hey this is jquery");
+
+    // 2  change html  tag attribute value
+    //$("iframe").attr('src','jquery.slim.min.js');
+
+    // 3 change the style usnig css in jqyery
+    //$('#srql').css('background-color', 'red');
+    //$('#srql').css('display', 'none');
+    //alert($(this).css('display' , 'none'));
+
+    // 4 in css how get value of attribute
+    //alert($('body').css('width'));
+
+    // 5 Fading Content
+    //$(this).fadeOut('slow', function(){alert('this is fading on page');});
+    //$('#srql').hide();
+
+    // 6 Animate in jQuery
+    //$(this).animate({width:"300px", height:'300px'} ,2000);
+
+
+
+
+
+  });
+   // 1 connection of jquery
+  /*if( typeof jQuery == 'undefined'){
+    alert('jquery is not installed');
+  }else {
+    alert('jquery is working ');
+  }*/
+
+  // 2 Regular Exprection
+  var c= /narsi/;
+  var string='this is narsi';
+  var g=string.match(c);
+  alert(g);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+        <head> <title> Number Guess</title>
+        </head>
+      <body>
+        <center><h1> Guessing Number Between 0 to 3 </h1>
+      Enter Guessing Number<input id='get'type="text">
+        <button id="textch">Guess</button>
+          <script type="text/javascript">
+          document.getElementById('textch').onclick=function(){
+            var rendomnumber;
+            rendomnumber=Math.floor(Math.random()*3 +1);
+            if(document.getElementById('get').value == rendomnumber){
+              alert('you are great guessing number is :' +rendomnumber );
+            }else {
+              alert('Nope! you guessing wrong number and right number is:'+ rendomnumber);
+            }
+          }
+
+          </script>
+
+      </body>
