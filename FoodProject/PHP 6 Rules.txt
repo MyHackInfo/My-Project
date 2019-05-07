@@ -1,0 +1,18 @@
+###################  PHP 6 Rules $$$$$$$$$$$$$$$$$$$
+
+	1->> The first page name should be always index  page name (index.php).
+	2->> We well not use reserved keyword in user define variable, function, array name etc.
+	3->> W3 www Rules
+		1-> The coding well be small case.
+		2-> We have open and close tag.
+		3-> To create a table we can use table tag or div tag.
+	4->> The repositry folder will be htdocs.
+	5->> The submistion is a progertry of a form so we will take all input use a form.
+	6->> There are 6 type of inpurt method 
+		1-> Textbox 	 (limit information like:name, email)
+		2-> Textarea	 (when information is large like:feedback )
+		3-> RadioButton	 (if we have multiple choice but need take single input then we use radio button as input)
+		4-> checkbox	 (if we have multiple option and we whant multiple input )
+		5-> DropDown	 (if we have multiple choice but need take single input then we use radio button as input)
+		6-> FileMenu	 (if you want to take input as a file then we will use file menu.)
+		7-> SubmitButton (for submission of form we use the submit button.)
