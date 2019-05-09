@@ -1,26 +1,25 @@
 <?php
 session_start();
-//require_once("admin/connection.php");
+require_once("admin/connection.php");
 extract($_REQUEST);
+//$name=$_REQUEST['name'];
+//echo $name;
 if(isset($Submit))
 {
-	if($_SESSION['capd']==$cap)
+	if($_SESSION['s']==$cap)
 	{
-	$_SESSION['n']=$name;
-	$_SESSION['e']=$email;
-	$_SESSION['m']=$mobile;
-	//mysql_query("insert into feedback set name='".$name."',email='".$email."',mobile='".$mobile."',feedback='".$feedback."'");
-	header("location: welcome.php");
-	exit();
+		$_SESSION['n']=$name;
+		$_SESSION['e']=$email;
+		$_SESSION['m']=$mobile;
+		mysql_query("insert into feedback set name='".$name."',email='".$email."',mobile='".$mobile."',feedback='".$feedback."'");
+		header("location: welcome.php");
+		exit();
 	}else
 	{
-		echo "invaid text";
+		echo "invalid text";
 	}
-
+	
 }
-
-
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -72,7 +71,7 @@ function valid()
     <tr>
       <td>Name</td>
       <td><label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" autofocus="" />
       </label></td>
     </tr>
     <tr>
@@ -95,7 +94,7 @@ function valid()
     </tr>
     <tr>
       <td><p>Enter Here</p>
-      <p><img src="line_cap.php" />&nbsp; </p></td>
+      <p><img src="arith_cap.php" />&nbsp; </p></td>
       <td><label>
         <input type="text" name="cap" />
       </label></td>

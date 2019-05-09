@@ -8,8 +8,14 @@
       <tr>
         <td><span class="style3"><a href="feedback.php">Feedback</a></span></td>
       </tr>
+	        <tr>
+        <td><span class="style3"><a href="pages.php">Page Manager</a></span></td>
+      </tr>
 	  <tr>
         <td><span class="style3"><a href="upload.php">Upload</a></span></td>
+      </tr>
+	  <tr>
+        <td><span class="style3"><a href="contact.php">Contact Us</a></span></td>
       </tr>
       <tr>
         <td><span class="style3"><a href="index.php?logout=successfully logout">Logout</a></span></td>

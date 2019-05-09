@@ -30,7 +30,7 @@ if($_SESSION['n']=="")
   <?php include("header.php")?>
   <tr>
     <?php include("left.php")?>
-    <td width="647"><marquee>This is Personal Info Page</marquee> </td>
+    <td width="647"><?php include("personal_info_update.php")?></td>
   </tr>
   <?php include("footer.php")?>
 </table>

@@ -30,7 +30,7 @@ if($_SESSION['n']=="")
   <?php include("header.php")?>
   <tr>
     <?php include("left.php")?>
-    <td width="647"><marquee>This is Change Password Page</marquee> </td>
+    <td width="647"><?php include("change1.php")?></td>
   </tr>
   <?php include("footer.php")?>
 </table>

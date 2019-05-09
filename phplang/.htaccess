@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^our_rooms$ rooms.php
+RewriteRule ^about.html$ about.php
+RewriteRule ^reservation.asp$ res.php
+RewriteRule ^todo_list$ todo.php
+RewriteRule ^contact_us$ contact.php
