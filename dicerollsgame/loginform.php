@@ -4,8 +4,13 @@ include("connection.php");
 extract($_REQUEST);
 //$user="admin";
 //$pass ="pass";
-$query = mysqli_query($conn,"select * from user") or die("query not perform");
-$access=mysqli_fetch_array($query) or die("dont access the value");
+//$query = mysqli_query($conn,"select * from user") or die("query not perform");
+//$access=mysqli_fetch_array($query) or die("dont access the value");
+
+// test all user search
+$query = mysqli_query($conn,"SELECT * FROM `user` WHERE username='$username' and password='$password' ") or die("query not perform");
+$c=mysqli_num_rows($query);
+
 
 if(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
 	$c_user = $_COOKIE['username'];
@@ -17,7 +22,8 @@ if(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
 
 if(isset($Submit))
 {
-	if($access['username'] == $username && $access['password'] == $password)
+	//if($access['username'] == $username && $access['password'] == $password)
+    if($c>0)
 	{
 
 		if(isset($checkbox))
@@ -126,7 +132,7 @@ if(!empty($_GET['logout']))
         <div class="clearfix">
             <label class="pull-left checkbox-inline"><input name="checkbox" type="checkbox" id="checkbox"> 
             Remember me</label>
-            <a href="#" class="pull-right">Forgot Password?</a>
+            <a href="forget_password.php" class="pull-right">Forgot Password?</a>
         </div>        
     </form>
     <p class="text-center"><a href="registerform.php">Create an Account</a></p>
